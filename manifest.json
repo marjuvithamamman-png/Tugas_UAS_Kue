@@ -1,0 +1,8 @@
+{
+  "name": "Toko Kue Manis",
+  "short_name": "TokoKue",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff69b4"
+}

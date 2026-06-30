@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kue Manis</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff69b4">
+</head>
+<body>
+
+<header>
+    <h1>🍰 Toko Kue Manis</h1>
+    <p>Kue Lezat Setiap Hari</p>
+</header>
+
+<section class="produk">
+
+    <div class="card">
+        <img src="image/CakeCokelat.jpg" alt="Cake Cokelat">
+        <h3>Kue Coklat</h3>
+        <p>Rp 25.000</p>
+        <button onclick="tambahKeranjang('Kue Coklat',25000)">
+            Tambah
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="image/Cheesecake.jpg" alt="Cheesecake">
+        <h3>Kue Keju</h3>
+        <p>Rp 30.000</p>
+        <button onclick="tambahKeranjang('Kue Keju',30000)">
+            Tambah
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="image/Brownies.jpg" alt="Brownies">
+        <h3>Brownies</h3>
+        <p>Rp 20.000</p>
+        <button onclick="tambahKeranjang('Brownies',20000)">
+            Tambah
+        </button>
+    </div>
+
+</section>
+
+<section class="keranjang">
+    <h2>🛒 Keranjang</h2>
+
+    <ul id="listKeranjang"></ul>
+
+    <h3>Total: Rp <span id="total">0</span></h3>
+
+    <button class="checkout" onclick="checkout()">
+        Checkout
+    </button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
